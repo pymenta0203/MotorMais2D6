@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+@layer base {
+  *, *::before, *::after {
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    box-shadow: none !important;
+  }
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Sharp scrollbars */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+    border-left: 1px solid #333333;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+  }
+
+  /* Hide number input spinners */
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  input[type=number] { 
+    -moz-appearance: textfield; 
+  }
+}
+
+/* ======================================================================= */
+/* LIGHT THEME: MONOCHROME INVERSION (PRETO VIRA BRANCO, BRANCO VIRA PRETO) */
+/* DOURADO ESPECIAL DO ATRIBUTO VIRA ROXO VIBRANTE COM ALTO CONTRASTE      */
+/* ======================================================================= */
+
+html.theme-light {
+  color-scheme: light;
+}
+
+html.theme-light body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Scrollbars in Light Theme */
+html.theme-light ::-webkit-scrollbar-track {
+  background: #ffffff !important;
+  border-left: 1px solid #d4d4d4 !important;
+}
+html.theme-light ::-webkit-scrollbar-thumb {
+  background: #000000 !important;
+}
+html.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #404040 !important;
+}
+
+/* Selection in Light Theme */
+html.theme-light ::selection {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Base Monochrome Inversions */
+html.theme-light .bg-black {
+  background-color: #ffffff !important;
+}
+
+html.theme-light .text-white {
+  color: #000000 !important;
+}
+
+html.theme-light .border-white {
+  border-color: #000000 !important;
+}
+
+html.theme-light .border-white\/40 {
+  border-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+html.theme-light .border-white\/20 {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+html.theme-light .bg-white {
+  background-color: #000000 !important;
+}
+
+html.theme-light .text-black {
+  color: #ffffff !important;
+}
+
+html.theme-light .border-black {
+  border-color: #ffffff !important;
+}
+
+/* Modal and Backdrop overlays in Light Theme */
+html.theme-light .bg-black\/80,
+html.theme-light .bg-black\/85,
+html.theme-light .bg-black\/90,
+html.theme-light .bg-black\/95 {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+}
+
+/* Neutrals Inversion */
+html.theme-light .bg-neutral-950 {
+  background-color: #f5f5f5 !important;
+}
+
+html.theme-light .bg-neutral-900 {
+  background-color: #ebebeb !important;
+}
+
+html.theme-light .bg-neutral-800 {
+  background-color: #dedede !important;
+}
+
+html.theme-light .border-neutral-800 {
+  border-color: #d4d4d4 !important;
+}
+
+html.theme-light .border-neutral-700 {
+  border-color: #c4c4c4 !important;
+}
+
+html.theme-light .border-neutral-600 {
+  border-color: #a3a3a3 !important;
+}
+
+html.theme-light .border-neutral-900 {
+  border-color: #e5e5e5 !important;
+}
+
+html.theme-light .text-neutral-400 {
+  color: #525252 !important;
+}
+
+html.theme-light .text-neutral-300 {
+  color: #404040 !important;
+}
+
+html.theme-light .text-neutral-500 {
+  color: #737373 !important;
+}
+
+/* Hover States Inversion */
+html.theme-light .hover\:bg-white:hover {
+  background-color: #000000 !important;
+}
+
+html.theme-light .hover\:text-black:hover {
+  color: #ffffff !important;
+}
+
+html.theme-light .hover\:bg-black:hover {
+  background-color: #ffffff !important;
+}
+
+html.theme-light .hover\:text-white:hover {
+  color: #000000 !important;
+}
+
+html.theme-light .hover\:border-white:hover {
+  border-color: #000000 !important;
+}
+
+/* Form inputs & dropdowns */
+html.theme-light input,
+html.theme-light select,
+html.theme-light textarea {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+html.theme-light input::placeholder,
+html.theme-light textarea::placeholder {
+  color: #737373 !important;
+}
+
+/* SPECIAL ATTRIBUTE GOLD -> PURPLE IN LIGHT THEME */
+/* "já aquele dourado especial do atributo no tema claro fica roxo para ter contraste" */
+html.theme-light .border-amber-400 {
+  border-color: #7e22ce !important; /* purple-700 */
+}
+
+html.theme-light .text-amber-400 {
+  color: #6b21a8 !important; /* purple-800 */
+}
+
+html.theme-light .text-amber-300 {
+  color: #581c87 !important; /* deep high-contrast royal purple */
+}
+
+html.theme-light .bg-amber-950\/20,
+html.theme-light .bg-amber-950\/40,
+html.theme-light .bg-amber-950\/60 {
+  background-color: #f3e8ff !important; /* purple-100 soft background */
+}
+
+html.theme-light .drop-shadow-\[0_0_8px_rgba\(251\,191\,36\,0\.5\)\] {
+  filter: drop-shadow(0 0 8px rgba(126, 34, 206, 0.45)) !important;
+}
+
+/* Red alerts remain clean and legible in light theme */
+html.theme-light .bg-red-950\/40 {
+  background-color: #fee2e2 !important; /* light red-100 */
+}
+
+html.theme-light .text-red-500 {
+  color: #dc2626 !important; /* red-600 */
+}
+
+html.theme-light .text-red-400 {
+  color: #b91c1c !important; /* red-700 */
+}
+
+html.theme-light .border-red-500 {
+  border-color: #dc2626 !important;
+}
+

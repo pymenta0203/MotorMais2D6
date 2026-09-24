@@ -1,0 +1,6 @@
+{
+  "name": "Motor +2D6 - Gerador de Fichas e Raças",
+  "description": "Gerador de fichas, criador de raças e gerenciador de regras do sistema Motor +2D6 por Tio Nitro com raças padrão: Humanos, Urgos, Anões, Esqueletos, Goblins e Elfos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
